@@ -4066,11 +4066,11 @@ class OrbitControls extends EventDispatcher {
         this.target = new Vector3();
 
         // How far you can dolly in and out ( PerspectiveCamera only )
-        this.minDistance = 4;
+        this.minDistance = 3;
         this.maxDistance = 7;
 
         // How far you can zoom in and out ( OrthographicCamera only )
-        this.minZoom = 4;
+        this.minZoom = 3;
         this.maxZoom = 7;
 
         // How far you can orbit vertically, upper and lower limits.
@@ -5531,7 +5531,7 @@ class LoadingSpinner {
 
             .spinner${this.elementID} {
                 padding: 15px;
-                background: #07e8d6;
+                background: #f7f7f3;
                 z-index:99999;
             
                 aspect-ratio: 1;
@@ -5549,8 +5549,8 @@ class LoadingSpinner {
 
             .spinnerContainerPrimary${this.elementID} {
                 z-index:99999;
-                background-color: rgba(128, 128, 128, 0.75);
-                border: #666666 1px solid;
+                background-color: rgba(128, 128, 128, 0);
+                border: #666666 0px solid;
                 border-radius: 5px;
                 padding-top: 20px;
                 padding-bottom: 10px;
@@ -5574,8 +5574,8 @@ class LoadingSpinner {
 
             .spinnerContainerMin${this.elementID} {
                 z-index:99999;
-                background-color: rgba(128, 128, 128, 0.75);
-                border: #666666 1px solid;
+                background-color: rgba(128, 128, 128, 0);
+                border: #666666 0px solid;
                 border-radius: 5px;
                 padding-top: 20px;
                 padding-bottom: 15px;
