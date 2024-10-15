@@ -5545,15 +5545,15 @@
             .messageContainer${this.elementID} {
                 height: 20px;
                 font-family: arial;
-                font-size: 12pt;
-                color: #ffffff;
+                font-size: 13pt;
+                color: #e8e4da;
                 text-align: center;
                 vertical-align: middle;
             }
 
             .spinner${this.elementID} {
-                padding: 15px;
-                background: #f7f7f3;
+                padding: 17px;
+                background: #e8e4da;
                 z-index:99999;
             
                 aspect-ratio: 1;
