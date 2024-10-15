@@ -4066,12 +4066,12 @@ class OrbitControls extends EventDispatcher {
         this.target = new Vector3();
 
         // How far you can dolly in and out ( PerspectiveCamera only )
-        this.minDistance = 0;
-        this.maxDistance = Infinity;
+        this.minDistance = 4;
+        this.maxDistance = 7;
 
         // How far you can zoom in and out ( OrthographicCamera only )
-        this.minZoom = 0;
-        this.maxZoom = Infinity;
+        this.minZoom = 4;
+        this.maxZoom = 7;
 
         // How far you can orbit vertically, upper and lower limits.
         // Range is 0 to Math.PI radians.
@@ -4098,7 +4098,7 @@ class OrbitControls extends EventDispatcher {
         this.rotateSpeed = 1.0;
 
         // Set to false to disable panning
-        this.enablePan = true;
+        this.enablePan = false;
         this.panSpeed = 1.0;
         this.screenSpacePanning = true; // if false, pan orthogonal to world-space direction camera.up
         this.keyPanSpeed = 7.0; // pixels moved per arrow key push
@@ -11901,7 +11901,7 @@ class Viewer {
                 if (controls) {
                     controls.listenToKeyEvents(window);
                     controls.rotateSpeed = 0.5;
-                    controls.maxPolarAngle = Math.PI * .75;
+                    controls.maxPolarAngle = Math.PI * .42;
                     controls.minPolarAngle = 0.1;
                     controls.enableDamping = true;
                     controls.dampingFactor = 0.05;
